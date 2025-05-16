@@ -1,5 +1,5 @@
 app:
   image:
     repository: colosodocker/educacionit-app
-    tag: "0.2.0"
+    tag: "latest"
     pullPolicy: IfNotPresent
