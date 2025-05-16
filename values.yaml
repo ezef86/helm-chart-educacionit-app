@@ -1,1 +1,5 @@
-# empty
+app:
+  image:
+    repository: colosodocker/educacionit-app
+    tag: "0.2.0"
+    pullPolicy: IfNotPresent

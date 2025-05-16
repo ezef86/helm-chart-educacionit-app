@@ -32,7 +32,7 @@ spec:
               value: root
             - name: PORT
               value: "3000"
-          image: colosodocker/educacionit-app:0.2.0
+          image: "{{ .Values.app.image.repository }}:{{ .Values.app.image.tag }}"
           name: educacionit-app
           ports:
             - containerPort: 3000
