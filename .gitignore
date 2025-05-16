@@ -1,0 +1,23 @@
+# Ignore Helm chart archive files
+ *.tgz
+
+# Ignore chart dependencies
+charts/
+
+# Ignore lock files
+Chart.lock
+requirements.lock
+
+# Ignore local values files
+values.local.yaml
+
+# Ignore temporary files
+*.swp
+*.bak
+*.tmp
+
+# Ignore node_modules if using Helm plugins with Node.js
+dependency_chart/node_modules/
+
+# Ignore VS Code settings
+.vscode/

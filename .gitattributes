@@ -1,0 +1,26 @@
+# Set default text eol normalization
+* text=auto
+
+# Force LF for source files
+*.yaml text eol=lf
+*.yml text eol=lf
+*.tpl text eol=lf
+*.sh text eol=lf
+*.md text eol=lf
+*.json text eol=lf
+*.js text eol=lf
+*.ts text eol=lf
+
+# Force CRLF for Windows batch files
+*.bat text eol=crlf
+*.cmd text eol=crlf
+
+# Ignore Helm chart archive files
+*.tgz binary
+
+# Exclude chart dependencies from diff
+charts/* linguist-vendored
+
+# Exclude Helm chart lock files from diff
+Chart.lock linguist-generated
+requirements.lock linguist-generated
